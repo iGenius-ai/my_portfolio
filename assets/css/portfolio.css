@@ -127,7 +127,7 @@ section {
 	gap: 3rem;
 }
 .home .home-img {
-	flex: 0 0 48%;
+	flex: 0 0 45%;
 }
 .home .home-img img {
 	width: 100%;
