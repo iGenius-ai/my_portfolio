@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300;400;500;600;700&display=swap');
+
 :root {
   --bg-color: #020312;
   --color-primary: #191d2b;
@@ -17,7 +19,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bahnschrift", sans-serif;
+  font-family: "Quicksand", sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -64,6 +66,8 @@ header.sticky{
 	padding: 10px 10%;
 	background: var(--nav-bg);
 	box-shadow: 1px 1px 5px #383838;
+	-webkit-backdrop-filter: blur(5px);
+	-moz-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);
 }
 
@@ -75,15 +79,10 @@ header a.logo {
 	font-weight: 900;
 	border-radius: 3px;
 }
-header a.logo .logo-icon {
-	font-size: 1.6rem;
-	color: var(--text-color);
-	padding: .5rem 0 .1rem .5rem;
-}
 header a.logo .logo-text {
 	padding: .3rem .6rem;
 	color: var(--text-color);
-	font-family: "Ink Free", sans-serif;
+	font-family: "Foldit", sans-serif;
 }
 
 .navbar {
