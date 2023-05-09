@@ -8,6 +8,7 @@
   --main-color: #eb4a4a;
 	--main-color-grad: #eb4a4a69;
   --second-color: #bdbdbd;
+  --second-color-alt: #bdbdbd;
   --other-color: #12141c;
 	--nav-bg: #0203129a;
   --h1-font: 5rem;
@@ -36,12 +37,13 @@ body {
   --bg-color: #faf8f8;
   /* --color-primary: #8da2ee; */
   /* --color-gradient-1: #2a323325; */
-  --text-color: #3f1679;
-  --main-color: #4ebb7f;
-  --main-color-grad: #4ebb7f69;
+  --text-color: #1D267D;
+  --main-color: #0C134F;
+  --main-color-grad: #1D267D69;
   --second-color: #020312;
-  --other-color: #dbdada;
-	--nav-bg: #e9e8e89a;
+  --second-color-alt: #8e95b3;
+  --other-color: #e4e2e2;
+	--nav-bg: #e9e8e877;
   --h1-font: 5rem;
   --p-font: 1.1rem;
 }
@@ -62,7 +64,7 @@ header {
   transition: all .40s ease;
 }
 
-header.sticky{
+header.sticky {
 	padding: 10px 10%;
 	background: var(--nav-bg);
 	box-shadow: 1px 1px 5px #383838;
@@ -74,7 +76,6 @@ header.sticky{
 header a.logo {
 	display: flex;
 	align-items: center;
-	/* background: linear-gradient(to right, #eb4a4a8c 15%, transparent 75%); */
 	font-size: 1.3rem;
 	font-weight: 900;
 	border-radius: 3px;
@@ -194,6 +195,7 @@ a.btn::before {
 }
 .btn:hover {
 	border: 1px solid var(--main-color);
+	color: #fff;
 	transition: all .3s ease;
 }
 a.btn:hover::before {
@@ -210,6 +212,7 @@ a.btn:hover::before {
 .connect .connect-icon {
 	background: var(--main-color);
 	padding: .6rem 1rem;
+	color: #fff;
 }
 
 /* --- About --- */
@@ -322,7 +325,7 @@ a.btn:hover::before {
 .skill-bars .skill-bar .skill-progress .bar {
 	width: 100%;
   height: 0.45rem;
-  background-color: var(--second-color);
+  background-color: var(--second-color-alt);
 	border-radius: 10px;
   margin-left: 1rem;
   position: relative;
@@ -630,6 +633,9 @@ a.btn:hover::before {
 	z-index: -1;
 	transition: all .3s ease;
 }
+.contact-form form .send:hover {
+	color: #fff;
+}
 .contact-form form .send:hover::before {
 	width: 100%;
 	height: 100%;
@@ -659,7 +665,7 @@ a.btn:hover::before {
 }
 
 .top i {
-	color: var(--text-color);
+	color: #fff;
 	background: var(--main-color);
 	font-size: 20px;
 	padding: 10px;
@@ -684,6 +690,7 @@ a.btn:hover::before {
 }
 .themes i {
 	font-size: 1.5rem;
+	color: #fff;
 	transition: all .3s ease;
 }
 .themes:hover i {
@@ -708,7 +715,6 @@ a.btn:hover::before {
 	:root{
 		--h1-font: 4.2rem;
 	  --h2-font: 2.9rem;
-	  --p-font: 1rem;
 	}
 	section{
 		padding: 100px 3% 30px;
@@ -752,7 +758,7 @@ a.btn:hover::before {
 	}
 	:root{
 		--h1-font: 3.5rem;
-	  --h2-font: 2.1rem;
+	  --h2-font: 2.05rem;
 	}
 	.home{
 		height: unset;
