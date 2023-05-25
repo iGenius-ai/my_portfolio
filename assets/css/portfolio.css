@@ -814,8 +814,8 @@ span.signature {
 	}
 	.navbar a{
 		display: block;
-		padding: 1rem;
-		margin: 1rem;
+		padding: .35rem;
+		margin: .5rem;
 	}
 	.navbar.active{
 		top: 100%;
