@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Nunito:wght@300;400&display=swap');
 
 	:root {
   --bg-color: #020312;
@@ -21,7 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -53,7 +52,7 @@ svg {
 	transform-origin: center;
 }
 #rotatingText {
-	animation: rotate-circle 15s linear infinite;
+	animation: rotate-circle 30s linear infinite;
 }
 .r_text {
 	font-weight: 600;
@@ -758,7 +757,7 @@ a.btn:hover::before {
 
 /* Signature */
 span.signature {
-	font-family: 'Macondo', sans-serif;
+	font-family: 'Macondo', cursive;
 	color: var(--text-color);
 	font-size: 1.1rem;
 }
