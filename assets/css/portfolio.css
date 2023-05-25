@@ -20,7 +20,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Nunito Extralight", sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -35,8 +35,6 @@ body {
 
 .light {
   --bg-color: #faf8f8;
-  /* --color-primary: #8da2ee; */
-  /* --color-gradient-1: #2a323325; */
   --text-color: #1D267D;
   --main-color: #0C134F;
   --main-color-grad: #1D267D69;
@@ -47,6 +45,59 @@ body {
   --h1-font: 5rem;
   --p-font: 1.1rem;
 }
+
+svg {
+	fill: var(--text-color);
+	height: auto;
+	transform-origin: center;
+}
+#rotatingText {
+	animation: rotate-circle 15s linear infinite;
+}
+.r_text {
+	font-weight: 600;
+}
+@keyframes rotate-circle {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+/* Components */
+/* ======================================= */
+@keyframes blink {
+	0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.typespace {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.nospace .typespace-box {
+	display: inline-flex;
+	gap: .65rem;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 0.6s linear infinite alternate;
+}
+/* ======================================= */
 
 /* Navbar */
 header {
@@ -83,10 +134,10 @@ header a.logo {
 header a.logo .logo-text {
 	padding: .3rem .6rem;
 	color: var(--text-color);
-	font-family: "Foldit", sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
-	letter-spacing: 1px;
+	/* font-family: "Foldit", sans-serif; */
+	font-family: 'Fira Code';
+	font-weight: 500;
+	font-size: 1.5rem;
 }
 
 .navbar {
@@ -135,6 +186,12 @@ section {
 }
 .home .home-img img {
 	width: 100%;
+	filter: grayscale(40%);
+	transition: all .3s ease;
+}
+.home .home-img img:hover {
+	filter: grayscale(0);
+	transition: all .3s ease;
 }
 
 .home-text {
@@ -257,6 +314,7 @@ a.btn:hover::before {
 	position: relative;
 	transition: all .3s ease;
 	overflow: hidden;
+	cursor: default;
 }
 .about-grid .about-item:hover {
 	border-bottom: 2px solid var(--main-color);
@@ -583,7 +641,7 @@ a.btn:hover::before {
 
 .contact-icons i:hover {
 	transform: scale(1.01) translateY(-2px);
-	color: var(--text-color);
+	color: #faf8f8;
 	background: var(--main-color);
 }
 
@@ -696,6 +754,13 @@ a.btn:hover::before {
 .themes:hover i {
 	rotate: 90deg;
 	transition: all .3s ease;
+}
+
+/* Signature */
+span.signature {
+	font-family: 'Zeyada', sans-serif;
+	color: var(--text-color);
+	font-size: 1.2rem;
 }
 
 /* Media Queries */

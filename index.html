@@ -30,7 +30,17 @@
   <!-- Header section -->
   <header>
     <a title="Nav Logo" href="#" class="logo">
-			<span class="logo-text">Portfolio</span>
+			<svg id="rotatingText" viewBox="0 0 100 100" width="50" height="50">
+				<defs>
+					<path id="circle" d="M 50, 50 m -35, 0 a 35,35 0 1,1 71,0 a 35,35 0 1,1 -71,0"/>
+				</defs>
+				<text font-size="19">
+					<textPath xlink:href="#circle" alignment-baseline="center" class="r_text">
+						 CHARLES | EMMANUEL |
+					</textPath>
+				</text>
+			</svg>
+			<!-- <span class="logo-text">Portfolio</span> -->
 		</a>
     <div class="bx bx-menu-alt-right" id="menu-icon"></div>
     <ul class="navbar">
@@ -48,10 +58,15 @@
 		</div>
     <div class="home-text">
       <h4>Hello there,</h4>
-      <h2>
-				I'm <span>Charles Emmanuel</span>. <br>
-				A Frontend Developer.
-			</h2>
+      <div class="nospace">
+				<h2>
+					I'm <span>Charles Emmanuel</span>.
+				</h2>
+				<h2 class="typespace-box">
+					A <div class="typespace"><span id="typing"></span> <span class="cursor"></span></div> Developer.
+					<!-- A Frontend Developer. -->
+				</h2>
+			</div>
 			<p>
 				I can wear many hats - or just one. Hailing from Nigeria, I have a keen 
 				interest in web design and development, and a sucker for understanding how the web works.
@@ -364,7 +379,7 @@
 	</section>
 
 	<div class="last-text">
-		<p>Built by Charles © 2023</p>
+		<p>Built by <span class="signature">Charles</span> © 2023</p>
 	</div>
 
 	<div class="themes">
