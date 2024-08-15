@@ -41,9 +41,10 @@ sr.reveal ('.about,.services,.portfolio,.contact',{
 
 // Typing effect
 const carouselText = [
-  {text: " React"},
+  {text: " Node.js"},
   {text: " PHP"},
-  {text: " JavaScript"}
+  {text: " JavaScript"},
+  {text: " MySQL"}
 ]
 
 $( document ).ready(async function() {
